@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Will You Be My Wife, Zariya? 💍❤️</title>
+  <meta name="description" content="A special romantic proposal for My Misty Madam Zariya" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Canvas for Floating Hearts & Sparkles -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- Ambient Audio Controls -->
+  <div class="audio-control" id="audioControl" title="Toggle Romantic Music">
+    <button id="musicToggleBtn" aria-label="Toggle Romantic Music">
+      <span class="music-icon" id="musicIcon">🎵</span>
+      <span class="music-text" id="musicText">Play Music</span>
+    </button>
+  </div>
+
+  <!-- Main Proposal Container -->
+  <main class="proposal-container" id="proposalContainer">
+    <!-- Question Card -->
+    <section class="card glass" id="questionCard">
+      <!-- Floating badge -->
+      <div class="badge">
+        <span class="sparkle">✨</span> Only For You <span class="sparkle">✨</span>
+      </div>
+
+      <!-- Cute Animated Character -->
+      <div class="character-wrapper" id="characterWrapper">
+        <img 
+          id="mainGif" 
+          src="https://media.tenor.com/efbqu-nhkOUAAAAM/milk-and-mocha-bear-couple.gif" 
+          alt="Cute romantic bear asking with flowers" 
+          loading="eager"
+        />
+        <div class="blushing-heart" id="blushingHeart">💖</div>
+      </div>
+
+      <!-- Proposal Heading -->
+      <div class="title-group">
+        <p class="sub-greeting">My dearest,</p>
+        <h1 class="main-title" id="proposalTitle">
+          Will you be my wife<br/>
+          <span class="highlight-name">My misty madam Zariya!!</span> 💍
+        </h1>
+        <p class="playful-subtitle" id="playfulSubtitle">
+          You hold the key to my heart... what do you say?
+        </p>
+      </div>
+
+      <!-- Buttons Arena -->
+      <div class="button-zone" id="buttonZone">
+        <button id="yesBtn" class="btn btn-yes" type="button">
+          <span class="btn-text">YES! 💍</span>
+          <span class="btn-glow"></span>
+        </button>
+
+        <button id="noBtn" class="btn btn-no" type="button">
+          <span class="btn-text" id="noBtnText">No</span>
+        </button>
+      </div>
+
+      <!-- Playful Tease Message Counter -->
+      <div class="tease-box" id="teaseBox" aria-live="polite"></div>
+    </section>
+
+    <!-- Celebration Screen (Hidden by default) -->
+    <section class="card glass celebration-card hidden" id="celebrationCard">
+      <div class="badge celebration-badge">
+        <span>💍 FOREVER & ALWAYS 💍</span>
+      </div>
+
+      <div class="character-wrapper celebration-character">
+        <img 
+          id="celebrateGif" 
+          src="https://media.tenor.com/gUiu1zyxfzYAAAAM/bear-kiss-bear-hug.gif" 
+          alt="Milk and Mocha bear hug and kiss" 
+          loading="eager"
+        />
+      </div>
+
+      <h2 class="celebration-title">
+        I knew it! 🥰<br />
+        <span class="celebrate-name">I love you forever, Zariya! ❤️</span>
+      </h2>
+
+      <p class="celebration-subtitle">
+        You've made me the happiest person in the universe! Every day with you is my greatest blessing.
+      </p>
+
+      <!-- Love Letter Preview -->
+      <div class="love-envelope" id="loveEnvelope">
+        <div class="envelope-header">
+          <span class="letter-icon">💌</span>
+          <span class="letter-title">A Love Letter to My Misty Madam</span>
+        </div>
+        <p class="letter-body">
+          "From the day you walked into my world, every moment became warmer, brighter, and full of wonder. You are my home, my laughter, and my greatest adventure. Thank you for choosing me. I promise to cherish, protect, and love you endlessly!"
+        </p>
+        <div class="letter-signature">
+          Yours eternally, with all my love ❤️
+        </div>
+      </div>
+
+      <!-- Action Buttons in Celebration -->
+      <div class="celebration-actions">
+        <button id="replayConfettiBtn" class="btn btn-outline" type="button">
+          🎉 More Fireworks!
+        </button>
+        <button id="screenshotTipBtn" class="btn btn-yes" type="button">
+          📸 Take a Screenshot & Send Me!
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="watermark">
+    Made with infinite love for <strong>Zariya</strong> ✨
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "proposal-zariya",
+  "version": "1.0.0",
+  "description": "Interactive proposal webpage for Zariya",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["proposal", "love", "zariya"],
+  "author": "",
+  "license": "MIT"
+}
